@@ -1,12 +1,12 @@
 *{
     font-family: 'Open Sans', sans-serif;
 }
-#header { 
-    display:inline; 
-}
-/*Color de la pagina*/
-.colordepagina {
+
+/*Cuerpo de pagina*/
+.cuerpodepagina {
     background-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 /*Cuadro de video home*/
 .contenedordevideo {
@@ -15,7 +15,7 @@
     width: 100%;
     background-color: white;
     margin: 5px 5px;
-    border-radius: 20px;
+    border-radius: 10px;
     justify-content: center;
     padding-top: 20px;
   }
@@ -27,7 +27,7 @@
 /*Barra navegadora*/
   .BarraNavegadora {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
   }
   .BarraNavegadoraColor {
@@ -35,9 +35,24 @@
     background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 20px;
  }
+ nav > a {
+  color: black;
+  text-decoration: none;
+  padding: 50px;
+  transition-duration: 1s;
+}
+
+nav > a:hover {
+  background-color: grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
 /*Logo para volver al home*/
   .logo {
     width: 120px;
@@ -47,21 +62,11 @@
     max-width: 100%;
     max-height: 100%;
   }
-
-  nav > a {
-    color: black;
-    text-decoration: none;
-    padding: 50px;
-  }
-
-  nav > a:hover {
-    background-color: grey;
-  }
   
   .Titulo {
     color: white;
   }
-
+/*Bloque de presentacion*/
   .ImagenDePresentacion {
     color: white;
     display: flex;
@@ -71,7 +76,12 @@
     border-radius: 20px;
   }
 
-  div > img {
+  footer > img {
     width: 30%;
     padding-top: 2px;
+  }
+
+  .Fuente {
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
   }
