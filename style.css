@@ -4,8 +4,8 @@
 
 /*Cuerpo de pagina*/
 .cuerpodepagina {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(36, 109, 191, 1) 100%);
+  background: rgb(140,140,140);
+  background: linear-gradient(180deg, rgba(140,140,140,1) 0%, rgba(111,111,111,1) 20%, rgba(0,0,0,1) 100%, rgba(255,255,255,1) 100%);
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -34,8 +34,8 @@ img {
 
 .BarraNavegadoraColor {
   float: inline-end;
-  background: rgb(73,199,255);
-  background: linear-gradient(0deg, rgba(73,199,255,1) 0%, rgba(36,91,191,1) 100%);
+  background: rgb(56,56,56);
+  background: linear-gradient(180deg, rgba(56,56,56,1) 0%, rgba(0,0,0,1) 48%, rgba(56,56,56,1) 100%, rgba(255,255,255,1) 100%);
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 10px;
@@ -82,13 +82,11 @@ nav>a:hover {
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  background: rgb(73,199,255);
-  background: linear-gradient(0deg, rgba(73,199,255,1) 0%, rgba(36,91,191,1) 100%);
-}
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0.4598214285714286) 0%, rgba(147,147,147,1) 100%, rgba(255,255,255,1) 100%);}
 
 div>img {
   width: 30%;
-  padding-top: 2px;
   padding-right: 2px;
 }
 
@@ -105,11 +103,12 @@ div>img {
 
 /*Pie de pagina*/
 .copyrightsize {
-  font-size: 15px;
+  font-size: 12px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
+  padding-top: 30px;
 }
 
 /*Pagina casamientos*/
@@ -136,18 +135,26 @@ footer>p {
   align-items: flex-end;
 }
 
+.FuenteCasamientos {
+  padding-top: 40px;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+}
 
 
 
 /*Diseño Responsive*/
 
+/*1300px como maximo*/
 @media screen and (max-width: 1300px) {
   .FuenteTitulos {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .Fuente {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .logo {
@@ -176,12 +183,19 @@ footer>p {
     height: 400px;
   }
 
+  .Titulo {
+    font-size: 30px;
+  }
+
+  .FuenteCasamientos {
+    font-size: 16px;
+  }
 
 }
 
 @media screen and (max-width: 760px) {
   .FuenteTitulos {
-    font-size: 15px;
+    font-size: 24px;
   }
 
   .Fuente {
@@ -213,6 +227,106 @@ footer>p {
   nav>a {
     padding: 13px;
   }
+
+  .copyrightsize {
+    font-size: 10px;
+  }
+
+  .Titulo {
+    font-size: 24px;
+  }
+
+  .FuenteCasamientos {
+    font-size: 14px;
+  }
+
 }
 
-@media screen and (max-width: 375px) {}
+@media screen and (max-width: 600px) {
+  .FuenteTitulos {
+    font-size: 12px;
+  }
+
+  .Fuente {
+    font-size: 8px;
+  }
+
+  div>img {
+    width: 130px;
+  }
+
+  .contenedordevideo {
+    height: 200px;
+  }
+
+  .BarraNavegadora {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .BarraNavegadoraColor {
+    font-size: 8px;
+    float: inline-end;
+    content: end;
+  }
+
+  nav>a {
+    padding: 7px;
+  }
+
+  .copyrightsize {
+    font-size: 8px;
+  }
+
+  .Titulo {
+    font-size: 20px;
+  }
+
+  .FuenteCasamientos {
+    font-size: 12px;
+  }
+
+}
+@media screen and (max-width: 430px) {
+  .logo {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .BarraNavegadoraColor {
+    display: none;
+  }
+
+  .contenedordevideo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .ImagenDePresentacion {
+    width: 100%;
+    height: auto;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .copyrightsize {
+    font-size: 6px;
+  }
+
+  .Titulo {
+    font-size: 18px;
+  }
+
+  .FuenteCasamientos {
+    font-size: 10px;
+  }
+
+}
