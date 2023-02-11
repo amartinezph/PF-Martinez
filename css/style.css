@@ -93,6 +93,14 @@
   text-align: center;
   font-size: 24px; }
 
+.Contactos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 50px;
+  height: 700px; }
+
 .Formulario {
   font-family: "Open Sans", sans-serif;
   color: white;

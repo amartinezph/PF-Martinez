@@ -139,6 +139,16 @@ $colorgrisoscuro: #333;
   font-size: 24px;
 }
 
+//Pagina Contactos 
+.Contactos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  text-decoration: none;
+  padding: 50px;
+  height: 700px;
+}
+
 //Formulario presupuestos
 .Formulario {
   font-family: $fuente-principal;
