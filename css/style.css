@@ -1,0 +1,224 @@
+.cuerpodepagina {
+  background: #8c8c8c;
+  background: linear-gradient(180deg, #8c8c8c 0%, #6f6f6f 20%, black 100%, white 100%);
+  margin-left: 10%;
+  margin-right: 10%; }
+
+.BarraNavegadora {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 250px; }
+  .BarraNavegadora .logo {
+    width: 120px;
+    height: 120px;
+    padding-top: 20px; }
+    .BarraNavegadora .logo img {
+      max-width: 100%;
+      max-height: 100%; }
+  .BarraNavegadora .BarraNavegadoraColor {
+    float: inline-end;
+    background: #383838;
+    background: linear-gradient(180deg, #383838 0%, black 48%, #383838 100%, white 100%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif; }
+  .BarraNavegadora nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 50px;
+    transition-duration: 1s; }
+  .BarraNavegadora nav > a:hover {
+    background-color: gray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 20px; }
+
+.contenedordevideo {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  background-color: black;
+  margin: 5px 5px;
+  border-radius: 10px;
+  justify-content: center;
+  padding-top: 20px; }
+  .contenedordevideo iframe {
+    width: 95%;
+    height: 95%; }
+
+.ImagenDePresentacion {
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  background: white;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.459821) 0%, #939393 100%, white 100%); }
+  .ImagenDePresentacion img {
+    width: 30%;
+    padding-right: 2px; }
+  .ImagenDePresentacion div {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px; }
+    .ImagenDePresentacion div h2 {
+      font-family: "Reem Kufi", sans-serif;
+      font-weight: bold;
+      font-size: 40px; }
+
+.piedepagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #333;
+  color: white;
+  height: 50px; }
+  .piedepagina img {
+    height: 30px;
+    margin: 0 10px; }
+
+.Titulo {
+  font-family: "Reem Kufi", sans-serif;
+  color: white;
+  text-align: center; }
+
+.FuenteParrafos {
+  color: white;
+  text-align: center;
+  font-size: 24px; }
+
+.Formulario {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  border: black solid 1px;
+  background: gray;
+  border-radius: 5px;
+  display: grid;
+  padding: 30px;
+  padding-bottom: 30px;
+  height: 700px;
+  width: 50%;
+  margin-bottom: 90px; }
+  .Formulario .fecha {
+    width: 50px;
+    height: 50px; }
+  .Formulario .BotonEnviar {
+    margin-bottom: 20px; }
+
+@media screen and (max-width: 1300px) {
+  .Fuente .FuenteTitulos {
+    font-size: 34px; }
+  .Fuente p {
+    font-size: 16px; }
+  .BarraNavegadora {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .BarraNavegadora .logo {
+      width: 160px; }
+    .BarraNavegadora .BarraNavegadoraColor {
+      font-size: 14px;
+      float: inline-end;
+      align-items: end; }
+    .BarraNavegadora nav > a {
+      padding: 20px; }
+  .contenedordevideo {
+    height: 400px; }
+  .Titulo {
+    font-size: 30px; }
+  .FuenteCasamientos {
+    font-size: 16px; } }
+
+@media screen and (max-width: 760px) {
+  .BarraNavegadora {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .BarraNavegadora .logo {
+      width: 130px; }
+    .BarraNavegadora .BarraNavegadoraColor {
+      font-size: 10px;
+      float: inline-end;
+      align-items: end;
+      padding: 8px; }
+    .BarraNavegadora nav > a {
+      padding: 14px; }
+  .contenedordevideo {
+    height: 250px; }
+  .ImagenDePresentacion img {
+    width: 160px; }
+  .ImagenDePresentacion .Fuente .FuenteTitulos {
+    font-size: 24px; }
+  .ImagenDePresentacion .Fuente p {
+    font-size: 10px; }
+  .Titulo {
+    font-size: 24px; }
+  .FuenteCasamientos {
+    font-size: 14px; } }
+
+@media screen and (max-width: 600px) {
+  .BarraNavegadora {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .BarraNavegadora .logo {
+      width: 100px; }
+    .BarraNavegadora .BarraNavegadoraColor {
+      font-size: 10px;
+      float: inline-end;
+      align-items: end;
+      padding: 8px; }
+    .BarraNavegadora nav > a {
+      padding: 7px; }
+  .contenedordevideo {
+    height: 200px; }
+  .ImagenDePresentacion img {
+    width: 130px; }
+  .ImagenDePresentacion .Fuente .FuenteTitulos {
+    font-size: 14px; }
+  .ImagenDePresentacion .Fuente p {
+    font-size: 8px; }
+  .Titulo {
+    font-size: 24px; }
+  .FuenteCasamientos {
+    font-size: 14px; } }
+
+@media screen and (max-width: 430px) {
+  .BarraNavegadora {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .BarraNavegadora .logo {
+      width: 30%;
+      height: 30%; }
+    .BarraNavegadora .BarraNavegadoraColor {
+      display: none; }
+  .contenedordevideo {
+    height: 100%;
+    width: 100%; }
+  .ImagenDePresentacion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .ImagenDePresentacion .Fuente .FuenteTitulos {
+      font-size: 14px; }
+    .ImagenDePresentacion .Fuente p {
+      font-size: 8px; }
+  .Titulo {
+    font-size: 18px; }
+  .FuenteCasamientos {
+    font-size: 10px; } }

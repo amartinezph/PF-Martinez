@@ -1,0 +1,360 @@
+$fuente-principal: 'Open Sans', sans-serif;
+$fuente-secundaria: 'Reem Kufi', sans-serif;
+$colordefondo: linear-gradient(180deg, rgba(140, 140, 140, 1) 0%, rgba(111, 111, 111, 1) 20%, rgba(0, 0, 0, 1) 100%, rgba(255, 255, 255, 1) 100%);
+$colordebarra: linear-gradient(180deg, rgba(56, 56, 56, 1) 0%, rgba(0, 0, 0, 1) 48%, rgba(56, 56, 56, 1) 100%, rgba(255, 255, 255, 1) 100%);
+$colorbloquedegradado: linear-gradient(180deg, rgba(255, 255, 255, 0.4598214285714286) 0%, rgba(147, 147, 147, 1) 100%, rgba(255, 255, 255, 1) 100%);
+$colorgris: gray;
+$colornegro: black;
+$colorblanco: white;
+$colorgrisoscuro: #333;
+
+
+//Cuerpo de pagina
+.cuerpodepagina {
+  background: rgb(140, 140, 140);
+  background: $colordefondo;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+//Barra navegadora
+.BarraNavegadora {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 250px;
+
+  //Logo para volver al home
+  .logo {
+    width: 120px;
+    height: 120px;
+    padding-top: 20px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .BarraNavegadoraColor {
+    float: inline-end;
+    background: rgb(56, 56, 56);
+    background: $colordebarra;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: $fuente-principal;
+  }
+
+  nav>a {
+    color: $colorblanco;
+    text-decoration: none;
+    padding: 50px;
+    transition-duration: 1s;
+  }
+
+  nav>a:hover {
+    background-color: $colorgris;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+}
+
+//Cuadro de video home
+.contenedordevideo {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  background-color: $colornegro;
+  margin: 5px 5px;
+  border-radius: 10px;
+  justify-content: center;
+  padding-top: 20px;
+
+  iframe {
+    width: 95%;
+    height: 95%;
+  }
+}
+
+//Bloque de presentacion
+.ImagenDePresentacion {
+  color: $colornegro;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  background: $colorbloquedegradado;
+
+  img {
+    width: 30%;
+    padding-right: 2px;
+  }
+
+  div {
+    font-family: $fuente-principal;
+    font-size: 20px;
+
+    h2 {
+      font-family: $fuente-secundaria;
+      font-weight: bold;
+      font-size: 40px;
+    }
+  }
+}
+
+//Footer con redes sociales
+.piedepagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: $colorgrisoscuro;
+  color: $colorblanco;
+  height: 50px;
+
+  img {
+    height: 30px;
+    margin: 0 10px;
+  }
+}
+
+//Titulos
+.Titulo {
+  font-family: $fuente-secundaria;
+  color: $colorblanco;
+  text-align: center;
+}
+
+//Parrafos descripcion casamientos y quince años
+.FuenteParrafos {
+  color: $colorblanco;
+  text-align: center;
+  font-size: 24px;
+}
+
+//Formulario presupuestos
+.Formulario {
+  font-family: $fuente-principal;
+  color: $colorblanco;
+  border: $colornegro solid 1px;
+  background: $colorgris;
+  border-radius: 5px;
+  display: grid;
+  padding: 30px;
+  padding-bottom: 30px;
+  height: 700px;
+  width: 50%;
+  margin-bottom: 90px;
+  .fecha{
+    width: 50px;
+    height: 50px;
+  }
+  .BotonEnviar{
+    margin-bottom: 20px;
+  }
+}
+
+//Diseño Responsive
+
+//1300px como maximo
+@media screen and (max-width: 1300px) {
+  .Fuente {
+    .FuenteTitulos {
+      font-size: 34px;
+    }
+
+    p{
+      font-size: 16px;
+    }
+  }
+
+  .BarraNavegadora {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .logo {
+      width: 160px;
+    }
+
+    .BarraNavegadoraColor {
+      font-size: 14px;
+      float: inline-end;
+      align-items: end;
+    }
+
+    nav>a {
+      padding: 20px;
+    }
+  }
+
+  .contenedordevideo {
+    height: 400px;
+  }
+
+  .Titulo {
+    font-size: 30px;
+  }
+
+  .FuenteCasamientos {
+    font-size: 16px;
+  }
+
+}
+//760px como maximo
+@media screen and (max-width: 760px) {
+  .BarraNavegadora {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .logo {
+      width: 130px;
+    }
+
+    .BarraNavegadoraColor {
+      font-size: 10px;
+      float: inline-end;
+      align-items: end;
+      padding: 8px;
+    }
+
+    nav>a {
+      padding: 14px;
+    }
+  }
+  
+  .contenedordevideo {
+    height: 250px;
+  }
+
+  .ImagenDePresentacion {
+    img {
+      width: 160px;
+    }
+    .Fuente {
+      .FuenteTitulos {
+        font-size: 24px;
+      }
+      p{
+        font-size: 10px;
+      }
+    }
+  }
+
+  .Titulo {
+    font-size: 24px;
+  }
+
+  .FuenteCasamientos {
+    font-size: 14px;
+  }
+}
+//600px como maximo
+@media screen and (max-width: 600px) {
+  .BarraNavegadora {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .logo {
+      width: 100px;
+    }
+
+    .BarraNavegadoraColor {
+      font-size: 10px;
+      float: inline-end;
+      align-items: end;
+      padding: 8px;
+    }
+
+    nav>a {
+      padding: 7px;
+    }
+  }
+  
+  .contenedordevideo {
+    height: 200px;
+  }
+
+  .ImagenDePresentacion {
+    img {
+      width: 130px;
+    }
+    .Fuente {
+      .FuenteTitulos {
+        font-size: 14px;
+      }
+      p{
+        font-size: 8px;
+      }
+    }
+  }
+
+  .Titulo {
+    font-size: 24px;
+  }
+
+  .FuenteCasamientos {
+    font-size: 14px;
+  }
+}
+//430px como maximo
+@media screen and (max-width: 430px) {
+  .BarraNavegadora {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .logo {
+      width: 30%;
+      height: 30%;
+    }
+
+    .BarraNavegadoraColor {
+    display: none;
+    }
+  }
+  
+  .contenedordevideo {
+    height: 100%;
+    width: 100%;
+  }
+
+  .ImagenDePresentacion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .Fuente {
+      .FuenteTitulos {
+        font-size: 14px;
+      }
+      p{
+        font-size: 8px;
+      }
+    }
+  }
+
+  .Titulo {
+    font-size: 18px;
+  }
+
+  .FuenteCasamientos {
+    font-size: 10px;
+  }
+}
