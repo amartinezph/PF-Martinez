@@ -11,10 +11,11 @@
   <meta name="audience" content="all">
   <meta name="description"
     content="Fotógrafo freelancer de bodas, quince años, eventos sociales y demás. Con casi 7 años de trayectoria haciendo lo que me gusta y dando lo mejor de mí para satisfacer a mis clientes">
-  <meta name="keywords" content="Fotografía, Bodas, 15 años">  
+  <meta name="keywords" content="Fotografía, Bodas, 15 años">
   <title>Home - Alvaro Martinez Fotógrafo</title>
   <link rel="icon" href="imagenes/icono/LogoBlanco-02.ico">
   <!--Linkeado de hoja de estilo css-->
+  <link rel="stylesheet" href="css/whatsapp.css">
   <link rel="stylesheet" href="css/style.css">
   <!--Linkeado de fuentes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +25,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&display=swap" rel="stylesheet">
   <!--Linkeado de imagenes-->
+  <link rel="stylesheet" href="imagenes/whatsapp.png">
+  <link rel="imagenes" href="imagenes/muro-cemento.jpg">
   <link rel="LogoBlanco-02" href="imagenes/LogoBlanco-02.png">
   <link rel="FotoDePresentacion" href="imagenes/Alvin-2.jpg">
   <!--Linkeado de bootstrap-->
@@ -38,11 +41,13 @@
       <img src="imagenes/LogoBlanco-02.png" alt="Alvaro Martinez Fotografo">
     </a>
     <nav class="BarraNavegadoraColor">
+      <a href="index.html">Home</a>
       <a href="casamientos.html">Casamientos</a>
       <a href="Quince años.html">Quince años</a>
       <a href="Presupuestos.html">Presupuestos</a>
-      <a href="Contacto.html">Contacto</a>
+      <a href="Testimonios.html">Testimonios</a>
     </nav>
+    <img src="imagenes/barra-de-menus.png" alt="menuhamburguesa" class="MenuHamburguesa">
   </header>
   <br>
   <!--Esto es el video de muestra-->
@@ -72,17 +77,31 @@
   <!--Esto es el footer con links a redes sociales-->
   <footer class="piedepagina">
     <div>
-      <a href="https://www.instagram.com/amartinez.ph">
+      <a href="https://www.instagram.com/amartinez.ph" target="_blank">
         <img src="imagenes/logo-instagram.png" alt="Instagram logo">
       </a>
-      <a href="https://www.facebook.com/amartinez.phh">
+      <a href="https://www.facebook.com/amartinez.phh" target="_blank">
         <img src="imagenes/logo-facebook.png" alt="Facebook logo">
       </a>
-      <a href="mailto:alvaromartinezph@gmail.com">
+      <a href="mailto:alvaromartinezph@gmail.com" target="_blank">
         <img src="imagenes/logo-gmail.png" alt="Email logo">
       </a>
     </div>
   </footer>
+  <!--Botón de whatsapp-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <a href="https://api.whatsapp.com/send?phone=543814039835&text=Hola!%20Quisiera%20obtener%20informacion%20sobre%20un%20servicio%20de%20fotograf%C3%ADa."
+    class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
 </body>
+<script>
+  const MenuHamburguesa = document.querySelector(".MenuHamburguesa")
+  const BarraNavegadoraColor = document.querySelector(".BarraNavegadoraColor")
+
+  MenuHamburguesa.addEventListener('click', () => {
+    BarraNavegadoraColor.classList.toggle('mobile-menu')
+  })
+</script>
 
 </html>
