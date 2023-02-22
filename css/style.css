@@ -28,7 +28,8 @@
     padding-bottom: 20px;
     border-radius: 10px;
     margin-top: 20px;
-    font-family: "Open Sans", sans-serif; }
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700; }
   .BarraNavegadora nav > a {
     z-index: 1;
     color: white;
@@ -150,9 +151,10 @@
 
 .Formulario {
   font-family: "Open Sans", sans-serif;
-  color: white;
+  color: black;
   border: black solid 1px;
-  background: gray;
+  background: white;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.459821) 0%, #939393 100%, white 100%);
   border-radius: 5px;
   padding: 30px;
   padding-bottom: 30px;
@@ -160,7 +162,8 @@
   width: 50%;
   margin-bottom: 90px;
   align-content: center;
-  justify-content: center; }
+  justify-content: center;
+  font-weight: 800; }
   .Formulario legend {
     display: flex;
     align-content: center;
@@ -256,7 +259,10 @@
     display: block; }
     .testimonials .testimonial {
       width: 100%;
-      font-size: 10px; } }
+      font-size: 10px; }
+  .Formulario {
+    display: block;
+    width: 100%; } }
 
 @media screen and (max-width: 600px) {
   .BarraNavegadora {
@@ -311,7 +317,10 @@
     display: block; }
     .testimonials .testimonial {
       width: 100%;
-      font-size: 10px; } }
+      font-size: 10px; }
+  .Formulario {
+    font-size: 14px;
+    height: 500px; } }
 
 @media screen and (max-width: 430px) {
   .BarraNavegadora {
