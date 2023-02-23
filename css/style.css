@@ -30,6 +30,9 @@
     margin-top: 20px;
     font-family: "Open Sans", sans-serif;
     font-weight: 700; }
+    .BarraNavegadora .BarraNavegadoraColor .mobile-menu {
+      position: fixed;
+      z-index: 1; }
   .BarraNavegadora nav > a {
     z-index: 1;
     color: white;
@@ -130,7 +133,6 @@
     margin-top: 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     text-align: center;
-    border: #333 3px solid;
     border-radius: 5px; }
     .testimonials .testimonial img {
       width: 80px;
@@ -152,7 +154,6 @@
 .Formulario {
   font-family: "Open Sans", sans-serif;
   color: black;
-  border: black solid 1px;
   background: white;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.459821) 0%, #939393 100%, white 100%);
   border-radius: 5px;
@@ -241,8 +242,8 @@
       transition: all 0.5s ease; }
     .BarraNavegadora .BarraNavegadoraColor.mobile-menu {
       margin-left: 0;
-      z-index: 0;
-      position: absolute; }
+      z-index: 99999;
+      position: fixed; }
   .contenedordevideo {
     height: 250px; }
   .ImagenDePresentacion img {

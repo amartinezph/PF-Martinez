@@ -51,6 +51,11 @@ $colorgrisoscuro: #333;
     margin-top: 20px;
     font-family: $fuente-principal;
     font-weight: 700;
+
+    .mobile-menu {
+      position: fixed;
+      z-index: 1;
+    }
   }
 
   nav>a {
@@ -186,7 +191,6 @@ $colorgrisoscuro: #333;
     margin-top: 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     text-align: center;
-    border: $colorgrisoscuro 3px solid;
     border-radius: 5px;
 
     img {
@@ -222,7 +226,6 @@ $colorgrisoscuro: #333;
 .Formulario {
   font-family: $fuente-principal;
   color: $colornegro;
-  border: $colornegro solid 1px;
   background: rgb(255, 255, 255);
   background: $colorbloquedegradado;
   border-radius: 5px;
@@ -350,8 +353,8 @@ $colorgrisoscuro: #333;
     }
     .BarraNavegadoraColor.mobile-menu {
       margin-left: 0;
-      z-index: 0;
-      position: absolute;
+      z-index: 99999;
+      position: fixed;
     }
 
     
