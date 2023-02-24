@@ -133,6 +133,15 @@ $colorgrisoscuro: #333;
   }
 }
 
+//Carrousel
+
+#carouselExampleFade{
+  background: rgb(255, 255, 255);
+  background: $colorbloquedegradado;
+  border: 10px solid transparent;
+  border-radius: 5px;
+}
+
 .carrousel-inner {
   border: 10px solid;
   color: $colorgris;
@@ -146,8 +155,9 @@ $colorgrisoscuro: #333;
   align-items: center;
   padding: 30px;
   background-color: $colorgrisoscuro;
-  color: $colorblanco;
   height: 50px;
+  border: 5px solid transparent;
+  border-radius: 5px;
 
   img {
     height: 30px;
@@ -323,6 +333,7 @@ $colorgrisoscuro: #333;
 
     .MenuHamburguesa {
       display: block;
+      z-index: 99999;
     }
 
     .BarraNavegadoraColor a {

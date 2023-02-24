@@ -89,6 +89,12 @@
       font-weight: bold;
       font-size: 40px; }
 
+#carouselExampleFade {
+  background: white;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.459821) 0%, #939393 100%, white 100%);
+  border: 10px solid transparent;
+  border-radius: 5px; }
+
 .carrousel-inner {
   border: 10px solid;
   color: gray;
@@ -100,8 +106,9 @@
   align-items: center;
   padding: 30px;
   background-color: #333;
-  color: white;
-  height: 50px; }
+  height: 50px;
+  border: 5px solid transparent;
+  border-radius: 5px; }
   .piedepagina img {
     height: 30px;
     margin: 0 10px; }
@@ -216,7 +223,8 @@
     .BarraNavegadora .logo {
       width: 130px; }
     .BarraNavegadora .MenuHamburguesa {
-      display: block; }
+      display: block;
+      z-index: 99999; }
     .BarraNavegadora .BarraNavegadoraColor a {
       position: relative;
       display: flex;
